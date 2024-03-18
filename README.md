@@ -26,6 +26,17 @@ Show the user their total balances (in accounts, in savings, in cash). Show the 
 ### Input Screen
 Keeping it simple, load the .csv file, show a display of columns found and designate each column automatically but allow the user to redesignate. After pressing upload, give results of record counts added, ensure no duplicates are made, and update the database. Grouping like items will be tricky but important. For example, Amazon orders all have unique identifiers but all have Amazon in the name so these should all be grouped. The monthly Prime membership should be separated out and designated as a monthly recurring bill.
 
+The key transaction types will be "Income: Taxable, Non-taxable, Other", "Expense: Recurring Bill, Standard Expense, Major Expense", and "Transfers: To savings, From savings, Other"
+Then each will get various categories that the user can select and place certain expense labels in each. For example: "Electric bill, mortgage, gas, pets, groceries, eating out, recreation, etc."
+
 ### Details Screen
 If the user has a common expense (say Harbor Freight in my case), show expense totals by location for a given time or details of how many records there are associated with that retailer.
 
+## Later Features
+Once the core of the program is flushed out, these are other features I intend to add to it. I have made some of these already in Excel but not very user friendly.
+
+### Real Estate Tracking
+Give an option to the user to add properties to track. Using webscrapping, pull the current market values from several different realty sites to get a rough, generalized market value. I want the user to also be able to add in their mortgage to see a side-by-side comparison. The mortgage part will need a little more effort to be able to calculate interest and how much has already been paid off versus left to pay. It would also be a good idea to see how much property taxes have change in previous years to give an average growth of that but it wouldn't be a very reliable value.
+
+### Loan Planner
+This will be a helpful tool for personal loans, mortages, student loans or auto loans. Essentially just a visualization of the prepayment of the loan with interest to get a good idea how long it will take and the overall cost of the loan (loan + interest).
